@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <td></td>
+    <td *ngFor="let crypto of cryptos">
+      <crypto-item [item]="crypto"></crypto-item>
+    </td>
+  </tr>
+  <tr *ngFor="let exchange of exchanges">
+    <td>
+      <crypto-item [item]="exchange"></crypto-item>
+    </td>
+    <td *ngFor="let crypto of cryptos">
+      <crypto-loader 
+      [exchange]="exchange" 
+      [currency]="currency" 
+      [crypto]="crypto">
+      </crypto-loader>
+    </td>
+  </tr>
+</table>
