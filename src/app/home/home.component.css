@@ -6,3 +6,7 @@ table td {
 table tr {
     min-height: 100px;
 }
+
+table td .value {
+    padding: 10px;
+}

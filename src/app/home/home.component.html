@@ -1,16 +1,17 @@
 <table>
   <tr>
     <td></td>
-    <td *ngFor="let crypto of cryptos">
-      <crypto-item [item]="crypto"></crypto-item>
-    </td>
-  </tr>
-  <tr *ngFor="let exchange of exchanges">
-    <td>
+    <td *ngFor="let exchange of exchanges" >
       <crypto-item [item]="exchange"></crypto-item>
     </td>
-    <td *ngFor="let crypto of cryptos">
+  </tr>
+  <tr *ngFor="let crypto of cryptos">
+    <td>
+      <crypto-item [item]="crypto"></crypto-item>
+    </td>
+    <td *ngFor="let exchange of exchanges" >
       <crypto-loader 
+      class="value"
       [exchange]="exchange" 
       [currency]="currency" 
       [crypto]="crypto">

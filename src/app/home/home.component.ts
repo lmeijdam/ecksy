@@ -17,12 +17,16 @@ export class HomeComponent implements OnInit {
 
   getExchanges() {
     return [
-      { name: 'Bitfinex' }
+      { name: 'Bitfinex' },
+      { name: 'Bittrex' },
+      { name: 'Binance' },
     ];
   }
   getCryptos() {
     return [
-      { name: 'Bitcoin' }
+      { name: 'Bitcoin' },      
+      { name: 'Ethereum' },      
+      { name: 'Litecoin' }
     ];
   }
 
